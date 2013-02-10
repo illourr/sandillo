@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Myra 4F Caps";
+  src: url('fonts/Myra4FCapsRegular.ttf') format('truetype'), url('fonts/Myra4FCapsRegular.otf') format('opentype');
+}
+h1 {
+  font-family: "Myra 4F Caps", sans-serif;
+}
