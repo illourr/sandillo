@@ -15,6 +15,7 @@ block content
       li Location: #{user._json.location}
       li Description: #{user._json.description}
       li Tweet Count: #{user._json.statuses_count}
-      li Last Tweet: #{user._json.status.text}
+      if (user._json.status.text)
+        li Last Tweet: #{user._json.status.text}
     a(href="/logout")
       | Logout
