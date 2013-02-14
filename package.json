@@ -4,7 +4,7 @@
     "name": "Dillon Curry",
     "email": "dilloncurry@gmail.com"
   },
-  "version": "0.1.5-3",
+  "version": "0.1.5-4",
   "scripts": {
     "start": "node app.js"
   },
