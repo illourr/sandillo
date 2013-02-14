@@ -76,7 +76,11 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/users', user.list);
-
+app.get('/logout', function(req, res) {
+  req.logout();
+  req.user = null;
+  res.redirect("/");
+});
 app.get('/auth/twitter',
   passport.authenticate('twitter'));
 

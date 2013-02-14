@@ -31,5 +31,5 @@
 exports.index = function(req, res){
   var userObj = req.user ? req.user : "Anonymous";
   console.log(userObj);
-  res.render('index',  {title: "Title", user: userObj } );
+  res.render('index',  {title: "Sandillo", user: userObj } );
 };
