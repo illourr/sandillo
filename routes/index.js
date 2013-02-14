@@ -30,6 +30,8 @@
 
 exports.index = function(req, res){
   var userObj = req.user ? req.user : "Anonymous";
+  if (userObj._json) 
+    userObj._json.status.text = userObj._json.status.text ? userObj._json.status.text : "You have no tweets.";
   console.log(userObj);
   res.render('index',  {title: "Sandillo", user: userObj } );
 };
