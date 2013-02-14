@@ -2,4 +2,15 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  if (user == "Anonymous")
+    p Welcome #{user}
+  else
+    p 
+      li Welcome #{user.displayName}
+      li Username: #{user.username}
+      li Picture: 
+        img(src="#{user.photos[0].value}")
+      li Location: #{user._json.location}
+      li Description: #{user._json.description}
+      li Tweet Count: #{user._json.statuses_count}
+      li Last Tweet: #{user._json.status.text}
